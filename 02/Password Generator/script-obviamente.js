@@ -12,6 +12,7 @@ const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const nummbers = "0123456789";
 const symbols = "!@#$%&*()_-+=";
 
+
 function getUppercase() {
     return upperLetters[Math.floor(Math.random() * upperLetters.length)];
 }
@@ -99,16 +100,22 @@ copyA1.addEventListener("click", () => {
     textarea.remove();
     alert("Senha copiada com sucesso.");
 
-
-
 });
 
 
-function msgAlert() {
-    var msgError;
-    if (confirm("Selecione uma das opções!")) {
-        msgError = "teste";
-    } else {
-        msgError = "teste1";
-    }
-};
+// TRABALHAR NESSE CÓDIGO AQUI PPRT KENNY NMRL TU É MTO BURRO MANÉ KKKKKKKKKKKKKXD //
+const checkbox = document.querySelectorAll("upper", "lower", "symbol", "number");
+const generate = document.querySelector("#generate");
+const errormsg = "Selecione as opções abaixo para gerar sua senha.";
+const pw = document.getElementById("pw");
+
+pw.addEventListener("pw", (event) => {
+    event.preventDefault();
+});
+
+function messageError() {
+    const ErrorMsg = input.parentNode.querySelector("");
+    ErrorMsg.innerText = "a";
+    input.className = type ? "hue" : "err";
+    return type;
+}
