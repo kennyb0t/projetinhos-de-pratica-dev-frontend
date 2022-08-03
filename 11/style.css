@@ -1,0 +1,140 @@
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+    /*
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    config global sem uso.
+    */
+    
+    body {
+        background: #272727;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .navMenu {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .navMenu a {
+        color: #f6f4e6;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: inline-block;
+        width: 100px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .navMenu a:hover {
+        color: #6441a5;
+    }
+    
+    .navMenu .dot {
+        width: 6px;
+        height: 6px;
+        background: #6441a5;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .navMenu a:nth-child(1):hover~.dot {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+    
+    .navMenu a:nth-child(2):hover~.dot {
+        -webkit-transform: translateX(107px);
+        transform: translateX(107px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+    
+    .navMenu a:nth-child(3):hover~.dot {
+        -webkit-transform: translateX(213px);
+        transform: translateX(213px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .sociais {
+        position: fixed;
+        top: 20px;
+    }
+    
+    .sociais ul {
+        padding: 0px;
+        transform: translate(-270px, 0);
+    }
+    
+    .sociais ul li {
+        display: block;
+        margin: 2px;
+        background: #272727;
+        width: 300px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 0 42px 72px 0;
+        transition: all 1s;
+    }
+    
+    .sociais ul #twtv:hover {
+        transform: translate(90px, 0);
+        background: #6441a5;
+    }
+    
+    .sociais ul #git:hover {
+        transform: translate(90px, 0);
+        background: #171515;
+    }
+    
+    .sociais ul #insta:hover {
+        transform: translate(90px, 0);
+        background-image: -webkit-linear-gradient(#4c68d7, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
+    }
+    
+    .sociais ul li:hover a {
+        color: #fff;
+    }
+    
+    .sociais ul li:hover i {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.36);
+        transform: rotate(360deg);
+        transition: all 1s;
+    }
+    
+    .sociais ul li i {
+        margin-left: 10px;
+        color: #000;
+        background: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        background: #ffffff;
+        transform: rotate(0deg);
+    }
