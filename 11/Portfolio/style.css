@@ -52,8 +52,8 @@
     }
     
     .navMenu a:nth-child(1):hover~.dot {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         opacity: 1;
@@ -112,7 +112,17 @@
     
     .sociais ul #insta:hover {
         transform: translate(90px, 0);
-        background-image: -webkit-linear-gradient(#4c68d7, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
+        background: #C13584;
+    }
+    
+    .sociais ul #link:hover {
+        transform: translate(90px, 0);
+        background: #0072b1;
+    }
+    
+    .sociais ul #tt:hover {
+        transform: translate(90px, 0);
+        background: #00acee;
     }
     
     .sociais ul li:hover a {
@@ -137,4 +147,15 @@
         font-size: 20px;
         background: #ffffff;
         transform: rotate(0deg);
+    }
+    
+    .main-title {
+        position: relative;
+        margin-top: 150px;
+        margin-left: 250px;
+    }
+    
+    .title {
+        color: #f6f4e6;
+        font-size: 52px;
     }
